@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_yellow"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="35sp"/>
+
+
+
+    <GridLayout
+        android:layout_weight="18"
+        android:columnCount="2"
+        android:rowCount="8"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="14dp">
+
+
+    <!-- Row 1 -->
+
+    <!-- Col 1 -->
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:layout_margin="16dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/bakery"
+                android:layout_weight="4"
+                android:background="@drawable/bakery"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageButton>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:text="@string/bakery"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- Col 2 -->
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/breakfast"
+                android:layout_weight="4"
+                android:background="@drawable/breakfast"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageButton>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:text="@string/breakfast"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+        <!-- Row 2 -->
+
+        <!-- Col 1 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:layout_columnWeight="1"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:layout_rowWeight="1"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:weightSum="5"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/burgers_and_sandwiches"
+                    android:layout_weight="4"
+                    android:background="@drawable/burgers_and_sandwiches"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageButton>
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/burgers_and_sandwiches"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Col 2 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:layout_margin="16dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:weightSum="5"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/chats"
+                    android:layout_weight="4"
+                    android:background="@drawable/chats"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageButton>
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/chats"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Row 3 -->
+
+        <!-- Col 1 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:weightSum="5"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/chinese"
+                    android:layout_weight="4"
+                    android:background="@drawable/chinese"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageButton>
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/chinese"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Col 2 -->
+        <android.support.v7.widget.CardView
+            android:layout_margin="16dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:weightSum="5"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/cold_beverages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@drawable/cold_beverages"
+                    android:scaleType="centerCrop"></ImageButton>
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/cold_beverages"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Row 4 -->
+
+        <!-- Col 1 -->
+        <android.support.v7.widget.CardView
+            android:layout_margin="16dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:weightSum="5"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/dosa"
+                    android:layout_weight="4"
+                    android:background="@drawable/dosa"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageButton>
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/dosa"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- Col 2 -->
+        <android.support.v7.widget.CardView
+            android:layout_margin="16dp"
+            android:layout_width="0dp"
+            android:minHeight="200dp"
+            android:minWidth="2000dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:weightSum="5"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/hot_beverages"
+                    android:layout_weight="4"
+                    android:background="@drawable/hot_beverages"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageButton>
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/hot_beverages"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+</GridLayout>
+
+
+
+
+</LinearLayout>
